@@ -1,0 +1,18 @@
+2025-12-22 05:34:10,308 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5030
+ * Running on http://192.168.0.140:5030
+2025-12-22 05:34:10,309 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-01-15 11:18:25,187 [WARNING] app.utils.queue_utils: Redis client not available for queue check
+2026-01-15 11:18:27,078 [INFO] httpx: HTTP Request: PATCH https://ocsfmpiciulmcrejifwo.supabase.co/rest/v1/report_ai?report_id=eq.REP-TEST-NII "HTTP/2 400 Bad Request"
+2026-01-15 11:18:27,393 [INFO] httpx: HTTP Request: PATCH https://ocsfmpiciulmcrejifwo.supabase.co/rest/v1/report_ai?report_id=eq.REP-TEST-NII "HTTP/2 400 Bad Request"
+2026-01-15 11:21:34,296 [WARNING] app.utils.queue_utils: Redis client not available for queue check
+2026-01-15 11:21:35,305 [INFO] httpx: HTTP Request: PATCH https://ocsfmpiciulmcrejifwo.supabase.co/rest/v1/report_ai?report_id=eq.REP-TEST-NII "HTTP/2 400 Bad Request"
+2026-01-15 11:21:35,595 [INFO] httpx: HTTP Request: PATCH https://ocsfmpiciulmcrejifwo.supabase.co/rest/v1/report_ai?report_id=eq.REP-TEST-NII "HTTP/2 400 Bad Request"
+2026-01-15 11:22:32,268 [WARNING] app.utils.queue_utils: Redis client not available for queue check
+2026-01-15 11:22:33,361 [INFO] httpx: HTTP Request: PATCH https://ocsfmpiciulmcrejifwo.supabase.co/rest/v1/report_ai?report_id=eq.REP-TEST-NII "HTTP/2 400 Bad Request"
+2026-01-15 11:22:33,624 [INFO] httpx: HTTP Request: PATCH https://ocsfmpiciulmcrejifwo.supabase.co/rest/v1/report_ai?report_id=eq.REP-TEST-NII "HTTP/2 400 Bad Request"
+2026-01-15 11:32:51,896 [WARNING] app.utils.queue_utils: Redis client not available for queue check
+2026-01-15 11:32:53,395 [INFO] httpx: HTTP Request: PATCH https://ocsfmpiciulmcrejifwo.supabase.co/rest/v1/report_ai?report_id=eq.REP-TEST-NII "HTTP/2 400 Bad Request"
+2026-01-15 11:32:53,798 [INFO] httpx: HTTP Request: PATCH https://ocsfmpiciulmcrejifwo.supabase.co/rest/v1/report_ai?report_id=eq.REP-TEST-NII "HTTP/2 400 Bad Request"
+2026-01-15 11:33:40,542 [WARNING] app.utils.queue_utils: Redis client not available for queue check

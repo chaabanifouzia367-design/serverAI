@@ -1,0 +1,106 @@
+version: '3.8'
+
+services:
+  web:
+    image: medical_app
+    build: .
+    container_name: medical_web
+    command: python run.py
+    ports:
+      - "5030:5030"
+    volumes:
+      - ./app:/app/app
+      - ./storage:/app/storage
+      - ./models:/app/models
+    environment:
+      - FLASK_ENV=development
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    env_file:
+      - .env
+    depends_on:
+      - redis
+    networks:
+      - medical_network
+
+  celery_worker:
+    image: medical_app
+    container_name: medical_celery_worker
+    # --concurrency=4: Ya3ni 4 tachet yekhdmou parallel. Beddel 4 b 9adeh t7eb (10, 20...).
+    # --pool=prefork: A7sen wahda lel CPU heavy tasks.
+    command: celery -A app.celery_app.celery worker --loglevel=info --pool=prefork --concurrency=4 --purge
+    volumes:
+      - ./app:/app/app
+      - ./storage:/app/storage
+      - ./models:/app/models
+      - totalsegmentator_weights:/root/.totalsegmentator
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - TORCH_SERIALIZATION_WEIGHTS_ONLY=0 # Fix for PyTorch 2.6 model loading
+    env_file:
+      - .env
+    depends_on:
+      - redis
+      - web
+    networks:
+      - medical_network
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  celery_beat:
+    image: medical_app
+    container_name: medical_celery_beat
+    command: celery -A app.celery_app.celery beat --loglevel=info
+    volumes:
+      - ./app:/app/app
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    env_file:
+      - .env
+    depends_on:
+      - redis
+      - web
+    networks:
+      - medical_network
+
+  flower:
+    image: medical_app
+    container_name: medical_flower
+    command: celery -A app.celery_app.celery flower --port=5555
+    ports:
+      - "5555:5555"
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    env_file:
+      - .env
+    depends_on:
+      - redis
+      - web
+    networks:
+      - medical_network
+
+  redis:
+    image: redis:7-alpine
+    container_name: medical_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - medical_network
+
+networks:
+  medical_network:
+    driver: bridge
+
+volumes:
+  redis_data:
+  totalsegmentator_weights:

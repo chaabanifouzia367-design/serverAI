@@ -1,0 +1,1117 @@
+{
+  "patientInfo": {
+    "patientId": "PT-2024-X88",
+    "info": {
+      "fullName": "Ahmed Ben Salah",
+      "dateOfBirth": "1978-05-22",
+      "age": 46,
+      "lastScanDate": "2024-10-14T08:15:00Z",
+      "gender": "Male",
+      "bloodType": "O+",
+      "allergies": [
+        "Amoxicillin"
+      ],
+      "medicalHistory": [
+        "Diabète Type 2",
+        "Extraction dents de sagesse 2005"
+      ]
+    }
+  },
+  "JAw": {
+    "upperJaw": {
+      "mask": []
+    },
+    "lowerJaw": {
+      "mask": []
+    }
+  },
+  "teeth": [
+    {
+      "toothNumber": 18,
+      "category": "Molar",
+      "note": "Dent de sagesse absente",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "boundingBox": null,
+      "teeth_mask": null,
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": null,
+      "Crown": null,
+      "approved": true,
+      "roots": 0,
+      "canals": 0
+    },
+    {
+      "toothNumber": 17,
+      "category": "Molar",
+      "note": "Légère usure",
+      "position": {
+        "x": 160,
+        "y": 210
+      },
+      "boundingBox": {
+        "xMin": 150,
+        "yMin": 200,
+        "xMax": 170,
+        "yMax": 220
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [
+          55,
+          56,
+          57
+        ],
+        "sagittal": [
+          60,
+          61
+        ],
+        "coronal": [
+          25
+        ]
+      },
+      "sliceRanges": {
+        "axial": {
+          "min": 20,
+          "max": 90
+        },
+        "sagittal": {
+          "min": 30,
+          "max": 90
+        },
+        "coronal": {
+          "min": 10,
+          "max": 50
+        }
+      },
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "2023-12-01",
+      "Endo": null,
+      "Root": {
+        "mask": []
+      },
+      "Crown": null,
+      "approved": true,
+      "roots": 3,
+      "canals": 3
+    },
+    {
+      "toothNumber": 16,
+      "category": "Molar",
+      "note": "Caries profonde",
+      "position": {
+        "x": 150,
+        "y": 205
+      },
+      "boundingBox": {
+        "xMin": 140,
+        "yMin": 195,
+        "xMax": 160,
+        "yMax": 215
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [
+          48
+        ],
+        "sagittal": [
+          20
+        ],
+        "coronal": [
+          15,
+          16
+        ]
+      },
+      "sliceRanges": {
+        "axial": {
+          "min": 10,
+          "max": 90
+        },
+        "sagittal": {
+          "min": 5,
+          "max": 85
+        },
+        "coronal": {
+          "min": 5,
+          "max": 45
+        }
+      },
+      "problems": [
+        {
+          "type": "Caries",
+          "severity": "High",
+          "mask": [],
+          "images": []
+        }
+      ],
+      "gumHealth": "Inflamed",
+      "lastCheckup": "2024-01-10",
+      "Endo": null,
+      "Root": {
+        "mask": []
+      },
+      "Crown": null,
+      "approved": true,
+      "roots": 3,
+      "canals": 4
+    },
+    {
+      "toothNumber": 15,
+      "category": "Premolar",
+      "note": "",
+      "position": {
+        "x": 140,
+        "y": 190
+      },
+      "boundingBox": {
+        "xMin": 135,
+        "yMin": 185,
+        "xMax": 145,
+        "yMax": 195
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "2023-11-20",
+      "Endo": null,
+      "Root": null,
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 14,
+      "category": "Premolar",
+      "note": "Traitement de canal ancien",
+      "position": {
+        "x": 130,
+        "y": 180
+      },
+      "boundingBox": {
+        "xMin": 125,
+        "yMin": 175,
+        "xMax": 135,
+        "yMax": 185
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [
+          50
+        ],
+        "sagittal": [
+          25
+        ],
+        "coronal": []
+      },
+      "sliceRanges": {
+        "axial": {
+          "min": 20,
+          "max": 80
+        },
+        "sagittal": {
+          "min": 10,
+          "max": 60
+        },
+        "coronal": {
+          "min": 10,
+          "max": 60
+        }
+      },
+      "problems": [],
+      "gumHealth": "Receding",
+      "lastCheckup": "2022-05-15",
+      "Endo": {
+        "mask": []
+      },
+      "Root": {
+        "mask": []
+      },
+      "Crown": {
+        "mask": []
+      },
+      "approved": true,
+      "roots": 2,
+      "canals": 2
+    },
+    {
+      "toothNumber": 13,
+      "category": "Canine",
+      "note": "",
+      "position": {
+        "x": 120,
+        "y": 170
+      },
+      "boundingBox": {
+        "xMin": 115,
+        "yMin": 165,
+        "xMax": 125,
+        "yMax": 175
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": {
+        "mask": []
+      },
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 12,
+      "category": "Incisor",
+      "note": "",
+      "position": {
+        "x": 110,
+        "y": 165
+      },
+      "boundingBox": {
+        "xMin": 105,
+        "yMin": 160,
+        "xMax": 115,
+        "yMax": 170
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": null,
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 11,
+      "category": "Incisor",
+      "note": "Fracture mineure émail",
+      "position": {
+        "x": 100,
+        "y": 160
+      },
+      "boundingBox": {
+        "xMin": 95,
+        "yMin": 155,
+        "xMax": 105,
+        "yMax": 165
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [
+          60
+        ],
+        "sagittal": [],
+        "coronal": [
+          30
+        ]
+      },
+      "sliceRanges": {
+        "axial": {
+          "min": 20,
+          "max": 80
+        },
+        "sagittal": {
+          "min": 20,
+          "max": 60
+        },
+        "coronal": {
+          "min": 20,
+          "max": 40
+        }
+      },
+      "problems": [
+        {
+          "type": "Fracture",
+          "severity": "Low",
+          "mask": [],
+          "images": []
+        }
+      ],
+      "gumHealth": "Healthy",
+      "lastCheckup": "2024-02-01",
+      "Endo": null,
+      "Root": null,
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 21,
+      "category": "Incisor",
+      "note": "",
+      "position": {
+        "x": 90,
+        "y": 160
+      },
+      "boundingBox": {
+        "xMin": 85,
+        "yMin": 155,
+        "xMax": 95,
+        "yMax": 165
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": null,
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 22,
+      "category": "Incisor",
+      "note": "",
+      "position": {
+        "x": 80,
+        "y": 165
+      },
+      "boundingBox": {
+        "xMin": 75,
+        "yMin": 160,
+        "xMax": 85,
+        "yMax": 170
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": null,
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 23,
+      "category": "Canine",
+      "note": "Dent incluse possible",
+      "position": {
+        "x": 70,
+        "y": 170
+      },
+      "boundingBox": {
+        "xMin": 65,
+        "yMin": 165,
+        "xMax": 75,
+        "yMax": 175
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [
+          55
+        ],
+        "sagittal": [
+          30,
+          31
+        ],
+        "coronal": []
+      },
+      "sliceRanges": {
+        "axial": {
+          "min": 20,
+          "max": 80
+        },
+        "sagittal": {
+          "min": 10,
+          "max": 70
+        },
+        "coronal": {
+          "min": 15,
+          "max": 65
+        }
+      },
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": {
+        "mask": []
+      },
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 24,
+      "category": "Premolar",
+      "note": "Manquante",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "boundingBox": null,
+      "teeth_mask": null,
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": null,
+      "Crown": null,
+      "approved": true,
+      "roots": 0,
+      "canals": 0
+    },
+    {
+      "toothNumber": 25,
+      "category": "Premolar",
+      "note": "",
+      "position": {
+        "x": 50,
+        "y": 190
+      },
+      "boundingBox": {
+        "xMin": 45,
+        "yMin": 185,
+        "xMax": 55,
+        "yMax": 195
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": {
+        "mask": []
+      },
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 26,
+      "category": "Molar",
+      "note": "Couronne posée",
+      "position": {
+        "x": 40,
+        "y": 205
+      },
+      "boundingBox": {
+        "xMin": 35,
+        "yMin": 200,
+        "xMax": 45,
+        "yMax": 210
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Good",
+      "lastCheckup": "2023-08-10",
+      "Endo": {
+        "mask": []
+      },
+      "Root": {
+        "mask": []
+      },
+      "Crown": {
+        "mask": []
+      },
+      "approved": true,
+      "roots": 3,
+      "canals": 3
+    },
+    {
+      "toothNumber": 27,
+      "category": "Molar",
+      "note": "",
+      "position": {
+        "x": 30,
+        "y": 210
+      },
+      "boundingBox": {
+        "xMin": 25,
+        "yMin": 205,
+        "xMax": 35,
+        "yMax": 215
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": {
+        "mask": []
+      },
+      "Crown": null,
+      "approved": true,
+      "roots": 3,
+      "canals": 3
+    },
+    {
+      "toothNumber": 36,
+      "category": "Molar",
+      "note": "",
+      "position": {
+        "x": 40,
+        "y": 250
+      },
+      "boundingBox": {
+        "xMin": 35,
+        "yMin": 245,
+        "xMax": 45,
+        "yMax": 255
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": {
+        "mask": []
+      },
+      "Crown": null,
+      "approved": true,
+      "roots": 2,
+      "canals": 3
+    },
+    {
+      "toothNumber": 35,
+      "category": "Premolar",
+      "note": "",
+      "position": {
+        "x": 50,
+        "y": 260
+      },
+      "boundingBox": {
+        "xMin": 45,
+        "yMin": 255,
+        "xMax": 55,
+        "yMax": 265
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": {
+        "mask": []
+      },
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 34,
+      "category": "Premolar",
+      "note": "Légère mobilité",
+      "position": {
+        "x": 60,
+        "y": 265
+      },
+      "boundingBox": {
+        "xMin": 55,
+        "yMin": 260,
+        "xMax": 65,
+        "yMax": 270
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [
+          70
+        ],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": {
+        "axial": {
+          "min": 30,
+          "max": 100
+        },
+        "sagittal": {
+          "min": 20,
+          "max": 60
+        },
+        "coronal": {
+          "min": 20,
+          "max": 60
+        }
+      },
+      "problems": [
+        {
+          "type": "Periodontitis",
+          "severity": "Low",
+          "mask": [],
+          "images": []
+        }
+      ],
+      "gumHealth": "Receding",
+      "lastCheckup": "2024-03-01",
+      "Endo": null,
+      "Root": {
+        "mask": []
+      },
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 33,
+      "category": "Canine",
+      "note": "",
+      "position": {
+        "x": 70,
+        "y": 270
+      },
+      "boundingBox": {
+        "xMin": 65,
+        "yMin": 265,
+        "xMax": 75,
+        "yMax": 275
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": {
+        "mask": []
+      },
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 32,
+      "category": "Incisor",
+      "note": "",
+      "position": {
+        "x": 80,
+        "y": 275
+      },
+      "boundingBox": {
+        "xMin": 75,
+        "yMin": 270,
+        "xMax": 85,
+        "yMax": 280
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": null,
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 31,
+      "category": "Incisor",
+      "note": "",
+      "position": {
+        "x": 90,
+        "y": 275
+      },
+      "boundingBox": {
+        "xMin": 85,
+        "yMin": 270,
+        "xMax": 95,
+        "yMax": 280
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": null,
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 41,
+      "category": "Incisor",
+      "note": "",
+      "position": {
+        "x": 100,
+        "y": 275
+      },
+      "boundingBox": {
+        "xMin": 95,
+        "yMin": 270,
+        "xMax": 105,
+        "yMax": 280
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": null,
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 42,
+      "category": "Incisor",
+      "note": "",
+      "position": {
+        "x": 110,
+        "y": 275
+      },
+      "boundingBox": {
+        "xMin": 105,
+        "yMin": 270,
+        "xMax": 115,
+        "yMax": 280
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": null,
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 43,
+      "category": "Canine",
+      "note": "",
+      "position": {
+        "x": 120,
+        "y": 270
+      },
+      "boundingBox": {
+        "xMin": 115,
+        "yMin": 265,
+        "xMax": 125,
+        "yMax": 275
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": {
+        "mask": []
+      },
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 44,
+      "category": "Premolar",
+      "note": "",
+      "position": {
+        "x": 130,
+        "y": 265
+      },
+      "boundingBox": {
+        "xMin": 125,
+        "yMin": 260,
+        "xMax": 135,
+        "yMax": 270
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": {
+        "mask": []
+      },
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 45,
+      "category": "Premolar",
+      "note": "",
+      "position": {
+        "x": 140,
+        "y": 260
+      },
+      "boundingBox": {
+        "xMin": 135,
+        "yMin": 255,
+        "xMax": 145,
+        "yMax": 265
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": null,
+      "problems": [],
+      "gumHealth": "Healthy",
+      "lastCheckup": "",
+      "Endo": null,
+      "Root": {
+        "mask": []
+      },
+      "Crown": null,
+      "approved": true,
+      "roots": 1,
+      "canals": 1
+    },
+    {
+      "toothNumber": 46,
+      "category": "Molar",
+      "note": "Caries occlusale",
+      "position": {
+        "x": 150,
+        "y": 250
+      },
+      "boundingBox": {
+        "xMin": 145,
+        "yMin": 245,
+        "xMax": 155,
+        "yMax": 255
+      },
+      "teeth_mask": "mask_base64...",
+      "slice": {
+        "axial": [
+          80,
+          81
+        ],
+        "sagittal": [],
+        "coronal": []
+      },
+      "sliceRanges": {
+        "axial": {
+          "min": 50,
+          "max": 120
+        },
+        "sagittal": {
+          "min": 20,
+          "max": 80
+        },
+        "coronal": {
+          "min": 20,
+          "max": 80
+        }
+      },
+      "problems": [
+        {
+          "type": "Caries",
+          "severity": "Medium",
+          "mask": [],
+          "images": []
+        }
+      ],
+      "gumHealth": "Inflamed",
+      "lastCheckup": "2024-03-10",
+      "Endo": null,
+      "Root": {
+        "mask": []
+      },
+      "Crown": null,
+      "approved": true,
+      "roots": 2,
+      "canals": 3
+    }
+  ],
+  "statistics": {
+    "totalTeeth": 25,
+    "missingTeeth": 2,
+    "treatedTeeth": 4,
+    "cariesDistribution": {
+      "enamel": 1,
+      "dentin": 2,
+      "pulp": 0
+    }
+  },
+  "scanInfo": {
+    "scanId": "SC-2024-0099",
+    "device": "Planmeca ProMax 3D",
+    "voxelSize": 0.15,
+    "dimensions": {
+      "x": 800,
+      "y": 800,
+      "z": 450
+    }
+  },
+  "problemDetection": [
+    "Caries detected on tooth 16",
+    "Caries detected on tooth 46",
+    "Potential mobility on tooth 34"
+  ],
+  "treatmentPlan": [
+    {
+      "planId": "TP-88",
+      "status": "Active",
+      "procedures": [
+        {
+          "name": "Root Canal Treatment",
+          "toothNumber": 16,
+          "prescriptions": [],
+          "materials": []
+        },
+        {
+          "name": "Composite Filling",
+          "toothNumber": 46,
+          "prescriptions": [],
+          "materials": [
+            "Composite A3"
+          ]
+        }
+      ],
+      "followUp": {
+        "date": "2024-05-15",
+        "requiredTests": []
+      }
+    }
+  ],
+  "metadata": {
+    "createdAt": "2024-04-01T10:00:00Z",
+    "technicianId": "TECH-04",
+    "clinicInfo": {
+      "name": "Tunis Dental Center",
+      "address": "Av. Habib Bourguiba, Tunis",
+      "phone": "+216 71 000 000"
+    },
+    "slice_count": {
+      "axial": 450,
+      "coronal": 400,
+      "sagittal": 400
+    }
+  },
+  "conclusion": "Le patient présente une bonne hygiène générale malgré quelques caries localisées. Le plan de traitement pour la dent 16 est prioritaire.",
+  "conclusionUpdatedAt": "2024-04-02T09:00:00Z"
+}

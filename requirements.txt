@@ -1,0 +1,36 @@
+# Flask and web dependencies
+Flask==2.3.3
+Flask-CORS==4.0.0
+Werkzeug==2.3.7
+
+
+# Celery and Redis
+celery==5.3.4
+redis==5.0.1
+flower==2.0.1
+
+# Medical image processing
+nibabel==5.2.0
+pydicom>=3.0.0
+numpy<2.0.0 # Pin to avoid 2.0 breaking changes with TensorFlow/Celery
+Pillow==10.0.1
+
+# Database and storage
+supabase==2.0.2
+
+# Utilities
+python-dotenv==1.0.0
+gunicorn==20.1.0
+tensorflow==2.14.0
+torch==2.4.1  # Pin to avoid PyTorch 2.6+ weights_only breaking change
+torchvision==0.19.1  # Compatible with torch 2.4.1
+ultralytics>=8.2.0  # YOLOv8 for tooth segmentation
+TotalSegmentator  # Unpin to get latest compatible version
+blosc2>=2.0.0 # Required by TotalSegmentator/tables
+rt_utils  # For DICOM RT Structs (optional but good)
+rt_utils  # For DICOM RT Structs (optional but good)
+scipy>=1.10.0  # For Curve Fitting (Splines)
+opencv-python-headless>=4.8.0  # For Image Processing
+# Note: The following are built-in Python modules and don't need to be installed:
+# uuid, datetime, hashlib, shutil, tempfile, logging, threading, time, 
+# functools, concurrent.futures, queue, json, os
