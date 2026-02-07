@@ -1,11 +1,10 @@
 #!/bin/bash
 
-# 1. Lansi el Celery Worker (fi 'background' --> &)
-# Hédha howa elli bech ya3mel el traitement mta3 el AI
-echo "Starting Celery Worker..."
-celery -A app.celery_app.celery worker --loglevel=info &
+# 1. Start Celery (Mode Solo = A9all RAM momken)
+# Zidna: --pool=solo --concurrency=1
+echo "Starting Celery Worker (Solo Mode)..."
+celery -A app.celery_app.celery worker --loglevel=info --pool=solo --concurrency=1 &
 
-# 2. Lansi el Web Server (fi 'foreground')
-# Hédha elli yched el connexion mta3 el site
+# 2. Start Web Server
 echo "Starting Web Server..."
 python run.py
