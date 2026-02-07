@@ -16,7 +16,6 @@ RUN pip install --no-cache-dir --upgrade pip setuptools wheel
 
 # Install Heavy AI Libs (Cached Layer)
 RUN pip install --no-cache-dir \
-    tensorflow==2.14.0 \
     torch==2.4.1 \
     torchvision==0.19.1
 
