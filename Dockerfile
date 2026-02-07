@@ -1,71 +1,50 @@
 # syntax=docker/dockerfile:1
-# Use Python 3.11 slim image
 FROM python:3.11-slim
 
-# Set working directory
 WORKDIR /app
 
-# Install system dependencies in a single layer
+# Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    gcc \
-    g++ \
-    git \
-    curl \
-    libffi-dev \
-    libssl-dev \
-    python3-dev \
-    pkg-config \
-    libjpeg-dev \
-    zlib1g-dev \
-    libfreetype6-dev \
-    liblcms2-dev \
-    libopenjp2-7-dev \
-    libtiff5-dev \
-    libharfbuzz-dev \
-    libfribidi-dev \
-    # OpenCV/OpenGL dependencies for ultralytics
-    libgl1 \
-    libglib2.0-0 \
-    libsm6 \
-    libxext6 \
-    libxrender-dev \
-    libgomp1 \
-    && rm -rf /var/lib/apt/lists/* \
-    && apt-get clean
+    gcc g++ git curl libffi-dev libssl-dev python3-dev pkg-config \
+    libjpeg-dev zlib1g-dev libfreetype6-dev liblcms2-dev libopenjp2-7-dev \
+    libtiff5-dev libharfbuzz-dev libfribidi-dev \
+    libgl1 libglib2.0-0 libsm6 libxext6 libxrender-dev libgomp1 \
+    && rm -rf /var/lib/apt/lists/* && apt-get clean
 
-# Upgrade pip, setuptools, and wheel
+# Upgrade pip
 RUN pip install --no-cache-dir --upgrade pip setuptools wheel
 
-# Pre-install heavy dependencies to leverage Docker layer caching
+# Install Heavy AI Libs (Cached Layer)
 RUN pip install --no-cache-dir \
     tensorflow==2.14.0 \
     torch==2.4.1 \
     torchvision==0.19.1
 
-# Copy requirements file first (for better caching)
+# Install Requirements
 COPY requirements.txt .
-
-# Install Python dependencies with cache mount for faster rebuilds
 RUN --mount=type=cache,id=pip,target=/root/.cache/pip \
     pip install -r requirements.txt
 
-# Set Python path to include the app directory
+# Set Python path
 ENV PYTHONPATH=/app
 
-# Copy the taskes package
-# Copy taskes package REMOVED (Moved to app/engine)
-
-# Copy application code
+# Copy Application Code
 COPY . .
 
-# Create necessary directories
+# Create directories
 RUN mkdir -p /app/uploads /app/cache_slices /app/processed /app/data
 
-# Set permissions
-RUN chmod -R 755 /app
+# --- FIX START: Zidna el script houni ---
+COPY start.sh .
 
-# Expose port (for web service)
+# Rakkaz mli7: Hédhi tsal7 mochkla tsir kèn tsajjalt script b Windows (CRLF)
+RUN sed -i 's/\r$//' start.sh && chmod +x start.sh
+
+# Na77ina 'chmod -R 755 /app' 5aterha RZINA barcha 3al PyTorch
+# Just na3tiw permission l script w l dossieret elli nest7a9ouhom
+RUN chmod -R 777 /app/uploads /app/processed /app/data
+
 EXPOSE 5030
 
-# Default command (overridden by docker-compose). Run the factory entrypoint.
-CMD ["python", "run.py"]
+# Lansi el script elli fih Celery + Web
+CMD ["./start.sh"]
