@@ -5,3 +5,5 @@ C:/Users/jihad/Desktop/XdentProject/server[[:space:]]AI/models/pano/multiproblem
 C:/Users/jihad/Desktop/XdentProject/server[[:space:]]AI/models/pano/tooth_segmentation.pt filter=lfs diff=lfs merge=lfs -text
 C:/Users/jihad/Desktop/XdentProject/server[[:space:]]AI/models/pano/multiproblem.pt filter=lfs diff=lfs merge=lfs -text
 C:/Users/jihad/Desktop/XdentProject/server[[:space:]]AI/models/pano/tooth_segmentation.pt filter=lfs diff=lfs merge=lfs -text
+C:/Users/jihad/Desktop/XdentProject/server[[:space:]]AI/models/pano/tooth_segmentation.pt filter=lfs diff=lfs merge=lfs -text
+C:/Users/jihad/Desktop/XdentProject/server[[:space:]]AI/models/pano/multiproblem.pt filter=lfs diff=lfs merge=lfs -text
