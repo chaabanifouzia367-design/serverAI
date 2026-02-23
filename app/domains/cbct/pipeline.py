@@ -119,6 +119,9 @@ def complete_medical_processing_aiReport_task(
                     pano_url = supabase.storage.from_('reports').get_public_url(storage_path)
                     logger.info(f"✅ Pano uploaded: {pano_url}")
                     
+            except Exception as e:
+                logger.error(f"❌ Failed to upload pano image: {e}")
+                raise Exception(f"Failed to upload pano image to storage: {str(e)}")
                     # [DEBUG] Upload Debug Axial View if exists
                     debug_path = pano_path.replace('.jpg', '_debug.jpg')
                     if os.path.exists(debug_path):

@@ -103,6 +103,11 @@ def upload_pano_task(self, validation_result, clinic_id, patient_id, report_id):
                 report_id=report_id
             )
             
+            if not upload_result.get('success'):
+                error_msg = upload_result.get('error', 'Unknown upload error')
+                logger.error(f"❌ Pano image upload failed: {error_msg}")
+                raise Exception(f"Failed to upload pano image to storage: {error_msg}")
+
             result = {
                 'status': 'uploaded',
                 'message': 'Pano image uploaded successfully',
